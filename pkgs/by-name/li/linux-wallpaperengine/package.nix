@@ -10,6 +10,7 @@
   SDL2,
   SDL2_mixer,
   cef-binary,
+  dbus,
   egl-wayland,
   ffmpeg,
   fftw,
@@ -60,7 +61,7 @@ stdenv.mkDerivation (finalAttrs: {
     repo = "linux-wallpaperengine";
     rev = "b016d7d1fdcf4e5fd2f9c9fa420a8aaa07fee02d"; #last change 07/21
     fetchSubmodules = true;
-    hash = "sha256-+3U0t7z/C/FxeYJfFkSoc8MIPj1VNL5JOdYgSig0HIg=";
+    hash = "sha256-ExWAYdSFW5plPuS3/jxTPMXIly6zVb5GojE3e37imZM=";
   };
 
   nativeBuildInputs = [
@@ -74,6 +75,7 @@ stdenv.mkDerivation (finalAttrs: {
   buildInputs = [
     SDL2
     SDL2_mixer
+    dbus
     egl-wayland
     ffmpeg
     fftw
